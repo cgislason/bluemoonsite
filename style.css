@@ -1,49 +1,90 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    background:  url("background.jpg")  no-repeat center center fixed;
-    background-size: 100%;
-    background-position-y: 35%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background:  url("background.jpg")  no-repeat center center fixed;
+  background-size: 100%;
+  background-position-y: 35%;
+  padding-bottom: 2rem;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 65% 2em min(45em, 25%) auto;
+  grid-template-rows: 1fr;
+  margin: 0 auto;
 }
 
 .box {
-    box-shadow: 2px 2px #4C4C4C;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0.5em;
-    padding: 2em;
-    width: 60%;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  box-shadow: 2px 2px #4C4C4C;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+.sidebar {
+  color: #EEE;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  box-shadow: 2px 2px #2C2C2C;
+  background-color: rgba(19, 126, 174, 0.65);
 }
 
 h1 {
-    font-family: 'Fascinate', cursive;
-    color: #F36C4E;
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px #4C4C4C;
+  text-align: center;
+  font-family: 'Fascinate', cursive;
+  color: #f36c4e;
+  font-size: 3.5em;
+  margin-bottom: 0.6em;
+  text-shadow: 2px 2px #4C4C4C;
+}
+
+h3 {
+  margin-top: 0em;
+  text-align: center;
+}
+
+hr {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  height: 1px;
+  background: #2C2C2C;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #2C2C2C, rgba(0, 0, 0, 0));
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.sadie-img {
-    width: 300px;
-    margin-right: 7%;
+.buy-links a {
+  display: block;
+  color: #EEE;
+  text-decoration: underline;
+}
+
+.footer {
+  color: #EEE;
+  text-align: center;
+}
+
+.cover-img {
+  width: 20em;
+  float: left;
+  margin-right: 1em;
+}
+
+.portrait {
+  width: 100%;
+  margin-top: 0.3em;
 }
 
 .logo {
-    width: 29px;
-    margin-left: 8px;
-    vertical-align: middle;
-}
-
-.content {
+  width: 29px;
+  margin-left: 8px;
+  vertical-align: middle;
 }
