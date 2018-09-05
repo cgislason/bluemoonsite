@@ -57,6 +57,11 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #2C2C2C, rgba(0, 0, 0, 0));
 }
 
+hr.clear {
+  clear: both;
+  margin-top: 1em;
+}
+
 a {
   text-decoration: none;
 }
@@ -76,11 +81,19 @@ a {
   width: 20em;
   float: left;
   margin-right: 1em;
+  margin-bottom: 3em;
+}
+
+.bios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
 .portrait {
-  width: 100%;
-  margin-top: 0.3em;
+  width: 20em;
+  margin: 0.3em;
 }
 
 .logo {
